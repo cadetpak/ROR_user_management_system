@@ -1,0 +1,19 @@
+<h3>Edit User</h3>
+
+<!-- NOTE the hidden _method -patch, which makes is so we can call for it as PATCH method in routes.  will NOT work elsewise -->
+<form action='/users/<%= @user.id %>' method='post'>
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>"> 
+  <input type='hidden' name='_method' value='patch'> 
+  First Name: 
+  <input type="text" name="user[first_name" value="<%= @user.first_name %>"><br>
+  Last Name: 
+  <input type="text" name="user[last_name]" value="<%= @user.last_name %>"><br>
+  Email Address: 
+  <input type="text" name="user[email_address]" value="<%= @user.email_address %>"><br>
+  Password: 
+  <input type="password" name="user[password]" value="<%= @user.password %>"><br>
+  <input type="submit" value="Edit User">
+</form>
+
+
+<a href='/'>Back</a>

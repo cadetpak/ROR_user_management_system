@@ -1,0 +1,7 @@
+<h3>Show User</h3>
+<!--  @user is the variable defined by the User found by ID -->
+<p>First Name: <%= @user.first_name %> </p>
+<p>Last Name: <%= @user.last_name %></p>
+<p>Email Address: <%= @user.email_address %></p>
+
+<a href="/users/<%= @user.id %>/edit">Edit</a> | <a href='/'>Back</a> 
