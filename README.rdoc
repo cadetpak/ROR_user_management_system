@@ -1,28 +1,12 @@
-== README
+First assignment for Coding Dojo - Ruby track utilizing models, controllers, CRUD operations, and restful routes (not resources). 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Heavily commented!
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. Create User model, that contains first name, last name, email, and password. 
+2. Display on index page each users' first name, last name, and email. 
+3. Each user displayed should have actions: show, edit, destroy. 
+4. Allow client when clicking: 
+  - SHOW: Display information about that specific user. 
+  - EDIT: Display pre-filled form that allows client to edit information for that user.
+  - Destroy: Button when clicked, destroys that User from DB. 
+5. Include guiding links throughout (back to index, show, etc.)
